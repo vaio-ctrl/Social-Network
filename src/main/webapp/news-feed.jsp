@@ -62,7 +62,7 @@
                     <a href=""><i class="fa fa-location-arrow" aria-hidden="true"></i> Chicago </a>
                     <a href=""><i class="fa fa-graduation-cap" aria-hidden="true"></i> Community College</a>
                     <a href=""><i class="fa fa-building" aria-hidden="true"></i> GSC Corporation</a>
-                    <a href=""><i class="fa fa-graduation-cap" aria-hidden="true"></i> CBOOK Social</a>
+                    <a href=""><i class="fa fa-graduation-cap" aria-hidden="true"></i> Net Social</a>
                 </div>
 
                 <div class="left-tool-section">
