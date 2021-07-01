@@ -151,3 +151,4 @@ add
 del
 quad
 com
+syn
