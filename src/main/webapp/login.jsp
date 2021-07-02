@@ -152,4 +152,3 @@ del
 quad
 com
 syn
-nom
