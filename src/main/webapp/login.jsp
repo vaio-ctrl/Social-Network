@@ -150,4 +150,4 @@
 add
 del
 quad
-com
+co
