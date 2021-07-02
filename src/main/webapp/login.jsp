@@ -150,4 +150,3 @@
 add
 del
 quad
-c
