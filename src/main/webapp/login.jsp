@@ -147,4 +147,4 @@
 </body>
 
 </html>
-col-md-1
+col-md-
