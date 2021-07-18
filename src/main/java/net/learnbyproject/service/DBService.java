@@ -26,6 +26,6 @@ public class DBService {
     public static Date getFormattedDate(String date) throws ParseException{
         SimpleDateFormat sf = new SimpleDateFormat(DATE_PATTERN);
         java.util.Date parsedDate = sf.parse(date);
-        return new Date(parsedDate.getTime()); code
+        return new Date(parsedDate.getTime()); co
     }
 }
