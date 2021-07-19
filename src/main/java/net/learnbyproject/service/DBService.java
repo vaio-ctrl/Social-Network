@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 public class DBService {
-    public static String DRIVER;
+    public static String DRIVER; drv_sd1.sbd2
     public static String URL;
     public static String USER;
     public static String PASSWORD;
