@@ -11,7 +11,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="./news-feed.jsp" id="logo-large">Alliance Social</a>
+                        <a href="./news-feed.jsp" id="logo-large">Social Network</a>
                     </div>
                     <div class="col-md-6">
                         <form action="/" method="post" class="login-form-top">
