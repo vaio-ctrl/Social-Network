@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="./news-feed.jsp" id="logo-large">ALLIANCE UNIVERSITY</a>
+                        <a href="./news-feed.jsp" id="logo-large">Social Network</a>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                             <input type="password" name="user-login-password" placeholder="Password" />
                             <button type="submit" id="btn-login">Login</button>
                             <a href="/">Contact Admin</a> <br>
-                            <a href="./register.jsp">Signup for Alliance Social?</a>
+                            <a href="./register.jsp">Signup for Social Network?</a>
                         </form>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                     <a href="#">Log In</a>
                 </li>
             </ul>
-            Alliance University &copy; 2021
+            Social Network &copy; 2021
         </footer>
     </body>
 
