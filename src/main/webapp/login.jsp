@@ -1,149 +1,71 @@
+<%@page import="java.util.Objects"%>
+<%@page import="net.learnbyproject.helper.Keys"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>SocialNetwork - Connect your world</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <jsp:include page="/WEB-INF/head_tag.jsp">
+        <jsp:param name="title" value="Login" />
+    </jsp:include>
 
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <script src="./js/jquery-2.2.4.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-
-<body>
-    <nav class="container-fluid" id="main-nav-login">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="./news-feed.html" id="logo-large">SocialNetwork</a>
+    <body>
+        <nav class="container-fluid" id="main-nav-login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="./news-feed.jsp" id="logo-large">ALLIANCE UNIVERSITY</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <section class="container-fluid" style="background-color: #e9ebee; margin-top:-30px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <form action="/" method="post" id="body-login-form">
-                        <label>Login to SocialNetwork</label>
-                        <input type="text" name="user-login-id" placeholder="Email address or phone number" />
-                        <input type="password" name="user-login-password" placeholder="Password" />
-                        <button type="submit" id="btn-login">Login</button>
-                        <a href="/">Forgotten password?</a> <br>
-                        <a href="./register.html">Signup for SocialNetwork?</a>
-                    </form>
+        <section class="container-fluid" style="background-color: #190061; margin-top:-30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="login" method="post" id="body-login-form">
+                            <label>Login to Alliance Social</label>
+                            <div class="alert-danger">
+                                <%--<%= Objects.toString(session.getAttribute(Keys.ERROR), "")  %>--%>
+                                ${sessionScope[Keys.ERROR]}
+                            </div>
+                            <input type="text" name="user-login-id" placeholder="Email address or phone number" />
+                            <input type="password" name="user-login-password" placeholder="Password" />
+                            <button type="submit" id="btn-login">Login</button>
+                            <a href="/">Contact Admin</a> <br>
+                            <a href="./register.jsp">Signup for Alliance Social?</a>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="container">
-        <ul id="lans">
-            <li>English (UK)</li>
-            <li>
-                <a href="#">Tiếng việt</a>
-            </li>
-            <li>
-                <a href="#">中文(台灣)</a>
-            </li>
-            <li>
-                <a href="#">한국어</a>
-            </li>
-            <li>
-                <a href="#">日本語</a>
-            </li>
-            <li>
-                <a href="#">Français (France)</a>
-            </li>
-            <li>
-                <a href="#">ภาษาไทย</a>
-            </li>
-            <li>
-                <a href="#">Español</a>
-            </li>
-            <li>
-                <a href="#">Português (Brasil)</a>
-            </li>
-            <li>
-                <a href="#">Deutsch</a>
-            </li>
-            <li>
-                <a href="#">Italiano</a>
-            </li>
-            <li>+</li>
-        </ul>
-        <ul id="footer-tools">
-            <li><a href="/">Sign Up</a></li>
-            <li>
-                <a href="#">Log In</a>
-            </li>
-            <li>
-                <a href="#">Messenger</a>
-            </li>
-            <li>
-                <a href="#">Facebook Lite</a>
-            </li>
-            <li>
-                <a href="#">Mobile</a>
-            </li>
-            <li>
-                <a href="#">Find Friends</a>
-            </li>
-            <li>
-                <a href="#">Badges</a>
-            </li>
-            <li>
-                <a href="#">People</a>
-            </li>
-            <li>
-                <a href="#">Pages</a>
-            </li>
-            <li>
-                <a href="#">Places</a>
-            </li>
-            <li>
-                <a href="#">Games</a>
-            </li>
-            <li><a href="/">Locations</a></li>
-            <li>
-                <a href="#">Celebrities</a>
-            </li>
-            <li>
-                <a href="#">Groups</a>
-            </li>
-            <li>
-                <a href="#">Facebook Lite</a>
-            </li>
-            <li>
-                <a href="#">Mobile</a>
-            </li>
-            <li>
-                <a href="#">Find Friends</a>
-            </li>
-            <li>
-                <a href="#">Badges</a>
-            </li>
-            <li>
-                <a href="#">People</a>
-            </li>
-            <li>
-                <a href="#">Pages</a>
-            </li>
-            <li>
-                <a href="#">Places</a>
-            </li>
-            <li>
-                <a href="#">Games</a>
-            </li>
-        </ul>
-        SocialNetwork &copy; 2021
-    </footer>
-</body>
+        <footer class="container">
+            <ul id="lans">
+                <li>English (UK)</li>
+                             
+                <li>
+                    <a href="#">FranÃ§ais (France)</a>
+                </li>
+                <li>
+                    <a href="#">PortuguÃªs (Brasil)</a>
+                </li>
+                <li>
+                    <a href="#">Deutsch</a>
+                </li>
+                <li>
+                    <a href="#">Italiano</a>
+                </li>
+                <li>+</li>
+            </ul>
+            <ul id="footer-tools">
+                <li><a href="/">Sign Up</a></li>
+                <li>
+                    <a href="#">Log In</a>
+                </li>
+            </ul>
+            Alliance University &copy; 2021
+        </footer>
+    </body>
 
 </html>
